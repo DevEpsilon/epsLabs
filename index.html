@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>epsLabs.gg</title>
+    <title>EPS Labs</title>
     <style>
         * {
             margin: 0;
@@ -298,7 +298,9 @@
 
         // Animation loop
         function animate() {
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.1)';
+            // Clear canvas completely with solid black
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0a0a0a';
             ctx.fillRect(0, 0, width, height);
 
             drawConnections();
@@ -408,5 +410,4 @@
         animate();
     </script>
 </body>
-
 </html>
